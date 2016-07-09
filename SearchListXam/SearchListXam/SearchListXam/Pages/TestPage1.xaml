@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:SearchListXam.Controls;assembly=SearchListXam"
+             x:Class="SearchListXam.Pages.TestPage1">
+  <StackLayout Orientation="Vertical">
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Padding="20">
+      <Label Text="Search Filter" TextColor="#9ED0FF" FontSize="20" HorizontalTextAlignment="Center" />
+      <Label Text="source string" TextColor="#9ED0FF" FontSize="15" HorizontalTextAlignment="Center" />
+    </StackLayout>
+    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#9ED0FF" Padding="20">
+      <controls:SearchListExtented ItemsSource="{Binding Items}"/>
+    </StackLayout>
+    </StackLayout>
+</ContentPage>
